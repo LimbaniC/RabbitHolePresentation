@@ -7,7 +7,9 @@
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node ./dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker-build": "docker build -t currency-api:mk1 . ",
+    "docker-run": "docker run -p 4000:4000 currency-api:mk1"
   },
   "keywords": [],
   "author": "",
