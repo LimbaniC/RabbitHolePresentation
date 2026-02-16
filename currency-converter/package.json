@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "docker-build": "docker build -t currency-converter:mk1 . ",
-    "docker-run": "docker run -p 3000:3000 currency-converter:mk1",
+    "docker-run": "docker run -p 3000:3000 --name currency-converter currency-converter:mk1",
     "start": "npm run build && node ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
