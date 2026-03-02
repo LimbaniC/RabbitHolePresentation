@@ -1,0 +1,23 @@
+{
+  "name": "currency-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker-build": "docker build -t currency-api:mk1 . ",
+      "docker-run": "docker run --cpus=1 -p 4000:4000 --name currency-api currency-api:mk1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.2.3",
+    "express": "^5.2.1",
+    "typescript": "^5.9.3"
+  }
+}
