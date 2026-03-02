@@ -9,7 +9,7 @@
     "start": "npm run build && node ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "docker-build": "docker build -t currency-api:mk1 . ",
-    "docker-run": "docker run -p 4000:4000 --name currency-api currency-api:mk1"
+      "docker-run": "docker run --cpus=1 -p 4000:4000 --name currency-api currency-api:mk1"
   },
   "keywords": [],
   "author": "",

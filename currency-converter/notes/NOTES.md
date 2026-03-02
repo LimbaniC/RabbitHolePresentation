@@ -8,3 +8,7 @@ Currency converter pseudocode
      - Call external exchange-rate API
      - Store 
      - Return result
+
+Testing 
+1. Image size : docker images
+2. Time to first and second response : time curl -s http://localhost:3000/currency-cache/ETH/ZAR 
